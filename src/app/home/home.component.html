@@ -1,0 +1,298 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light header">
+  <nav role="navigation">
+    <div id="menuToggle">
+      <input type="checkbox" [(ngModel)]="isOpen" />
+      <span></span>
+      <span></span>
+      <span></span>
+      <ul id="menu">
+        <a href="#home">
+          <li (click)="closeOnClick()">Home</li>
+        </a>
+        <a href="#about">
+          <li (click)="closeOnClick()">About</li>
+        </a>
+        <a href="#classes">
+          <li (click)="closeOnClick()">Classes</li>
+        </a>
+        <a href="#pricing">
+          <li (click)="closeOnClick()">Pricing</li>
+        </a>
+        <a href="#contact">
+          <li (click)="closeOnClick()">Contact</li>
+        </a>
+      </ul>
+    </div>
+  </nav>
+  <a class="navbar-brand" href="#home">Evolve</a>
+  <div class="wrapper">
+    <a href="#" title="Listen to the song" class="player-controls">
+      <span class="audio-label">
+        <span>
+          Golan
+          <small>Zenith</small>
+        </span>
+      </span>
+      <span class="play"></span>
+      <span class="pause"></span>
+    </a>
+    <audio id="player">
+      <source src="../../assets/audio/zenith.mp3" type="audio/mp3">
+    </audio>
+  </div>
+  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#home">Home<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#classes">Classes</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#pricing">Pricing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+<div id="home" class="section-home full-height">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-centered">
+        <div class="home-content">
+          <h3 class="home_h3">Improve the physical <br> shape of your body</h3>
+          <p class="home_p">Start your way to healthy life with our personalized CrossFit programs</p>
+          <button type="button" class="btn btn-success home_button"><a href="#about">More About Us</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div id="about" class="section-about">
+  <div class="container">
+    <div class="about-title">
+      <h3 class="t-about">About Us</h3>
+    </div>
+    <div class="row cont">
+      <div class="col-xs-12 col-sm-12 col-md-6  col-lg-6 left-box">
+        <img class="image-about" src="../../assets/img/about.jpeg">
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-6  col-lg-6 right-box">
+        <div class="col-12">
+          <div class="box fadeDown">
+            <i class="fas fa-heart"></i>
+            <div class="content_info ">
+              <h1 class="content_title">Inspiring a healthier nation</h1>
+              <p class="content_text">At Evolve our vision is to inspire a healthier nation. We all know the benefits
+                of
+                being fit and well and so, by helping as many people as we can across the Bucharest, we want to do our
+                part to
+                make a positive contribution to our society.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="box fadeDown">
+            <i class="fas fa-users"></i>
+            <div class="content_info">
+              <h1 class="content_title">Everybody, everywhere</h1>
+              <p class="content_text">We have created a friendly, supportive place where everybody is welcome, in a
+                judgement free zone. We are here to help and support everybody, whoever they are. We have members from
+                allwalks of life, shapes and sizes, abilities, experience levels, and all types of goals.
+                Today we have over 230 gyms nationwide in convenient locations, providing more people than ever with
+                access to affordable fitness helping us to achieve our ambition of making fitness accessible to
+                everybody,
+                wherever they are.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="box fadeDown">
+            <i class="fas fa-dumbbell"></i>
+            <div class="content_info">
+              <h1 class="content_title">Equipment</h1>
+              <p class="content_text">We have kitted our gyms out with a wide range of the highest spec fitness
+                equipment,from getting your heart racing on our cardio machines, to building strength and muscle in our
+                free
+                weights and functional areas. So whatever your goal, we have the kit to help you get there.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="classes" class="section-classes">
+  <div class="classes_title">
+    <h3 class="t-classes">Classes</h3>
+  </div>
+  <div class="container">
+    <div class="row classes-content">
+      <div class="col-md-4">
+        <div class="card">
+          <img class="image-card" src="../../assets/img/classes/hiit.jpg">
+        </div>
+        <p class="classes_name">Hiit</p>
+        <span>Anybody looking to get fitter, faster, leaner and stronger in a short amount of time.</span>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img class="image-card" src="../../assets/img/classes/abs.jpg">
+        </div>
+        <p class="classes_name">Abs Class</p>
+        <span>Those looking for killer abs and athletes who are looking to get a stronger core.</span>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img class="image-card" src="../../assets/img/classes/cycling.jpg">
+        </div>
+        <p class="classes_name">Indoor Cycling</p>
+        <span>Spinning is brilliant for those looking to work up a sweat at their own pace.</span>
+      </div>
+    </div>
+    <div class="row classes-content">
+      <div class="col-md-4">
+        <div class="card">
+          <img class="image-card" src="../../assets/img/classes/boxing.jpg">
+        </div>
+        <p class="classes_name">Boxing</p>
+        <span>Anybody looking to relieve their stress levels while getting fit and strong in a fun-filled, social
+          environment.</span>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img class="image-card" src="../../assets/img/classes/yoga.jpg">
+        </div>
+        <p class="classes_name">Yoga</p>
+        <span>Yoga is perfect for everyone from top athletes to those who are looking to build strength, prevent injury
+          and reduce stress levels.</span>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img class="image-card" src="../../assets/img/classes/dance.jpg">
+        </div>
+        <p class="classes_name">Dance</p>
+        <span>If gyms just aren't your thing, then a dance class is the way to go. </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="pricing" class="section-pricing">
+  <div class="pricing-header">
+    <h3 class="pricing_title">Choose your plan</h3>
+    <p class="pricing-subtext">You can choose any membership plan that you like, but we recommend trying our workouts
+      for yourself before buying.</p>
+  </div>
+  <div class="container-fluid">
+    <div class="row sub-card">
+      <div class="col-md-3 sub-item sub-active">
+        <h3 class="sub-title">Starter</h3>
+        <span class="sub-price"><b style="font-size: 1.4rem;">€19.9</b> a month</span>
+        <hr>
+        <p class="responsive-text">This plan is perfect if you are just beginning your workouts.</p>
+        <h4>Open Gym</h4>
+        <h4>Hiit</h4>
+        <h4>Indoor Cycling</h4>
+        <h4 style="color:#696969;">Boxing</h4>
+        <h4 style="color:#696969;">Yoga</h4>
+        <h4 style="color:#696969;">Dance</h4>
+        <h4 style="color:#696969;">Personal Trainer</h4>
+        <div>
+          <div class="button">Buy Now</div>
+        </div>
+      </div>
+      <div class="col-md-3 sub-item sub-active" checked>
+        <h3 class="sub-title">Basic</h3>
+        <span class="sub-price"><b style="font-size: 1.4rem;">€59.9</b> a month</span>
+        <hr>
+        <p class="responsive-text">The basic plan includes most popular services regularly offered at our gym.</p>
+        <h4>Open Gym</h4>
+        <h4>Hiit</h4>
+        <h4>Indoor Cycling</h4>
+        <h4>Boxing</h4>
+        <h4>Yoga</h4>
+        <h4 style="color:#696969;">Dance</h4>
+        <h4 style="color:#696969;">Personal Trainer</h4>
+        <div>
+          <div class="button">Buy Now</div>
+        </div>
+      </div>
+      <div class="col-md-3 sub-item sub-active">
+        <h3 class="sub-title">Pro</h3>
+        <span class="sub-price"><b style="font-size: 1.4rem;">€99.9</b> a month</span>
+        <hr>
+        <p class="responsive-text">If you have some experience in training, then Pro plan is what you need.</p>
+        <h4>Open Gym</h4>
+        <h4>Hiit</h4>
+        <h4>Indoor Cycling</h4>
+        <h4>Boxing</h4>
+        <h4>Yoga</h4>
+        <h4>Dance</h4>
+        <h4>Personal Trainer</h4>
+        <div>
+          <div class="button">Buy Now</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="contact" class="section-container">
+  <div class="about-title">
+    <h3 class="t-about">Contact Us</h3>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 contact-icon">
+        <i class="fas fa-mobile-alt"></i>
+        <h3 class="icon-title">Call Us</h3>
+        <p class="ico-text">+1 034 873 3123</p>
+      </div>
+      <div class="col-md-3 contact-icon">
+        <i class="fas fa-envelope"></i>
+        <h3 class="icon-title">Mail Us</h3>
+        <p class="ico-text">support.evolve@gmail.com</p>
+      </div>
+      <div class="col-md-3 contact-icon">
+        <i class="fas fa-map-marker-alt"></i>
+        <h3 class="icon-title">Location</h3>
+        <p class="ico-text">Bucharest, 10 Strada Academiei</p>
+      </div>
+      <div class="col-md-3 contact-icon">
+        <i class="fas fa-hourglass-half"></i>
+        <h3 class="icon-title">Hours</h3>
+        <p class="ico-text">Mon - Fri : 9 AM to 5 PM</p>
+      </div>
+    </div>
+
+    <h3 class="subscribe-text">Subscribe us</h3>
+    <hr class="hr-contact">
+    <p class="contact-text">Subscribe to our Newsletter to get first.</p>
+    <input class="input-email" type="text" placeholder="Enter your email">
+    <button type="button" class="btn btn-success custom">Success</button>
+    <div class="row">
+      <div class="social">
+        <ul>
+          <li class="facebook"></li>
+          <li class="twitter"></li>
+          <li class="google"></li>
+          <li class="instagram"></li>
+        </ul>
+      </div>
+    </div>
+    <div class="powerBy">
+      <p class="powerBy-text">© 2019 Made by justin Srh</p>
+    </div>
+  </div>
+</div>
